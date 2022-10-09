@@ -18,10 +18,16 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
-    ],
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Webpack Plugin',
+      }),
+
+
+
 
     module: {
+      // TODO: Add CSS loaders and babel to webpack.
       rules: [
         
       ],
